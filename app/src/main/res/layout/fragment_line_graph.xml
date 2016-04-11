@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.db.chart.view.LineChartView
+        xmlns:chart="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/linechart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+    <ImageView
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:src="@drawable/ic_popup_sync_1"
+        android:layout_height="match_parent"
+        android:id="@+id/pendingView"
+        android:layout_gravity="center_vertical|center_horizontal" />
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/stock_err_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:maxLines="2"
+        android:ellipsize="marquee"
+        android:textSize="12sp" />
+
+</FrameLayout>
